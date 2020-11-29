@@ -1,38 +1,45 @@
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  background-color: #262626;
+  height: 100vh;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+/* !BUTTON STYLE */
+
+.homeBtn {
+  color: #4ea8de;
+  background-color: transparent;
+  border-radius: 50px;
+  border: solid 2px #4ea8de;
+  padding: 25px 50px;
+  outline: none;
+  font-size: 1.5em;
+  font-weight: 600;
+  cursor: pointer;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.homeBtn:hover {
+  box-shadow: 0 0 10px 1px rgb(255, 161, 242), 0 0 10px 2px rgb(135, 211, 255),
+    0px 15px 50px black;
+  color: #340c75;
+  border: none;
+  background-color: #95d7ff;
+  transition: 0.5s;
+  transform: translateY(-20px);
+}
+
+.homeBtn:not(:hover) {
+  transition: 0.5s ease-in-out;
+  transform: translateY(20px);
+  box-shadow: 0 0px 0px #000;
+  transition-delay: 50ms;
+}
+
+/* !END OF BUTTON STYLE */
+
+/* PROFILE TOGGLE CLASS */
+.popUp {
+  display: none;
 }

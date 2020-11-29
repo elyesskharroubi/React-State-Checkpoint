@@ -1,0 +1,42 @@
+.profile {
+  box-shadow: 0 0 20px 5px rgb(32, 32, 32);
+  height: 500px;
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  color: white;
+  background-color: rgb(83, 83, 83);
+  position: absolute;
+  z-index: 111;
+  top: 200px;
+  left: 760px;
+}
+
+figure {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+}
+
+img {
+  transform: translateY(-15px);
+}
+
+/* CLOSING PROFILE BUTTON */
+
+.closeBtn {
+  background-color: transparent;
+  font-style: italic;
+  color: rgb(255, 139, 139);
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.closeBtn:hover {
+  color: #fe5555;
+}
