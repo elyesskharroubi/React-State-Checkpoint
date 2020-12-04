@@ -11,7 +11,7 @@ export default function Profile(props) {
       <h1>John Doe</h1>
       <h3>CEO of Nothing</h3>
       <p>Erat nunc facilisis hendrerit enim elit congue.</p>
-      <button className="closeBtn" onClick={props.closing}>
+      <button className="closeBtn" onClick={props.close}>
         Close
       </button>
     </div>
